@@ -37,9 +37,172 @@
                         <li class="nav-item active"><a class="nav-link" href="#"><span
                                 class="fa fa-address-card fa-lg"></span> Contact</a></li>
                     </ul>
+
+                    <span class="navbar-text">
+                        <a data-target="#loginModal" data-toggle="modal">
+                            <span class="fa fa-sign-in"></span> Login
+                        </a>
+                    </span>
                 </div>
             </div>
         </nav>
+
+        <div class="modal fade" id="loginModal" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login </h4>
+                        <button class="close" data-dismiss="modal" type="button">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                           placeholder="Enter email" type="email">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                    <input class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                                           placeholder="Password" type="password">
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal" type="button">
+                                    Cancel
+                                </button>
+                                <button class="btn btn-primary btn-sm ml-1" type="submit">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="resmodal" role="dialog">
+            <div class="modal-dialog" role="content">
+                <div class="modal-content modal-lg">
+                    <div class="modal-header">
+                        <h2>Reserve a Table</h2>
+                        <i class="fa fa-close fa-lg mr-1 align-self-center" data-dismiss="modal"></i>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label class="col-12 col-sm-3 col-form-label"><strong>Number of
+                                                                                          Guests</strong></label>
+                                    <div class="col-12 col-sm-6">
+                                        <label class="col-form-label" for="numofgue1"><input
+                                                class="form-check-inline"
+                                                id="numofgue1"
+                                                name="numofgue"
+                                                type="radio"
+                                                value=""><strong>1
+                                                                 &nbsp;</strong>
+                                        </label>
+                                        <label class="col-form-label" for="numofgue2"><input
+                                                class="form-check-inline"
+                                                id="numofgue2"
+                                                name="numofgue"
+                                                type="radio"
+                                                value=""><strong>2
+                                                                 &nbsp;</strong>
+                                        </label>
+                                        <label class="col-form-label" for="numofgue3"><input
+                                                class="form-check-inline"
+                                                id="numofgue3"
+                                                name="numofgue"
+                                                type="radio"
+                                                value=""><strong>3
+                                                                 &nbsp;</strong>
+                                        </label>
+                                        <label class="col-form-label" for="numofgue4"><input
+                                                class="form-check-inline"
+                                                id="numofgue4"
+                                                name="numofgue"
+                                                type="radio"
+                                                value=""><strong>4
+                                                                 &nbsp;</strong>
+                                        </label>
+                                        <label class="col-form-label" for="numofgue5"><input
+                                                class="form-check-inline"
+                                                id="numofgue5"
+                                                name="numofgue"
+                                                type="radio"
+                                                value=""><strong>5
+                                                                 &nbsp;</strong>
+                                        </label>
+                                        <label class="col-form-label" for="numofgue6"><input
+                                                class="form-check-inline"
+                                                id="numofgue6"
+                                                name="numofgue"
+                                                type="radio"
+                                                value=""><strong>6
+                                                                 &nbsp;</strong>
+                                        </label>
+                                    </div>
+                                    <div class="col-12 col-sm-3"></div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-12 col-sm-3 col-form-label"><strong>Section</strong></label>
+                                    <div class="col-12 col-sm-auto">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-success active">
+                                                <input checked id="nonsmoke" name="smoke" type="radio">
+                                                <strong>Non-Smoke</strong>
+                                            </label>
+                                            <label class="btn btn-danger">
+                                                <input id="smoke" name="smoke" type="radio">
+                                                <strong>Smoke</strong>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm"></div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-12 col-sm-3 col-form-label"><strong>Date and
+                                                                                          Time</strong></label>
+                                    <div class="col-12 col-sm-4">
+                                        <input class="form-control" id="date" name="date" placeholder="Date"
+                                               type="text"
+                                               value="">
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <input class="form-control" id="time" name="time" placeholder="Time"
+                                               type="text"
+                                               value="">
+                                    </div>
+                                    <div class="col-sm-1"></div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="offset-sm-3 col-2">
+                                        <button class="btn btn-secondary" data-dismiss="modal" type="button">
+                                            <strong>Cancel</strong>
+                                        </button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn btn-primary" type="submit"><strong>Reserve</strong>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <header class="jumbotron">
             <div class="container">
@@ -51,6 +214,11 @@
                     </div>
                     <div class="col-12 col-sm align-self-center">
                         <img class="img-fluid" src="img/logo.png">
+                    </div>
+                    <div class="col-12 col-sm-3 align-self-center">
+                        <a class="btn btn-block btn-warning nav-link" data-target="#resmodal" data-toggle="modal">
+                            Reserve Table
+                        </a>
                     </div>
                 </div>
             </div>
